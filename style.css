@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(184, 184, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    margin: 0  0 20px 20px;
+}
+#criptografar{
+    background-color: rgb(184, 184, 224);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    resize: none;
+}
+#criptografar::placeholder{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(65, 65, 194);
+    margin-left: 20px;
+}
+.output{
+    background-color: white;
+    box-sizing: border-box;
+    width: 350px;
+    height: 95vh;
+    border-radius: 20px;
+    text-align: center;
+}
+.output img{
+    width: 250px;
+    margin-top: 100px;
+}
+.output h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #343A40;
+}
+.output p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #495057;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    word-break: break-all;
+}
+.warning{
+    display: flex;
+    align-items: center;
+}
+.warning img{
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+.left button{
+    width: 310px;
+    height: 60px;
+    border-radius: 20px;
+}
+.criptografar{
+    background-color: #0A3871;
+    color: white;
+}
+.descriptografar{
+    color: #0A3871;
+}
+@media (max-width: 1020px) {
+    body{
+        flex-direction: column;
+    }
+    .warning{
+        margin-top: 20px;
+    }
+    .left button{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 639px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .warning{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .left button{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
