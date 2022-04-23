@@ -39,19 +39,19 @@ descriptografarBtn.addEventListener("click", () => {
     let transformInArray = textarea.value.split("");
     for(let i = 0; i < transformInArray.length; i++){
         if(transformInArray[i] + transformInArray[i+1] === "ai"){
-            transformInArray.splice(i+1, i+1);
+            transformInArray.splice(i+1, 1);
         }
         else if(transformInArray[i] + transformInArray[i+1] + transformInArray[i+2] + transformInArray[i+3] + transformInArray[i+4] === "enter"){
-            transformInArray.splice(i+1, i+4);
+            transformInArray.splice(i+1, 4);
         }
         else if(transformInArray[i] + transformInArray[i+1] + transformInArray[i+2] + transformInArray[i+3] === "imes"){
-            transformInArray.splice(i+1, i+3);
+            transformInArray.splice(i+1, 3);
         }
         else if(transformInArray[i] + transformInArray[i+1] + transformInArray[i+2] + transformInArray[i+3] === "ober"){
-            transformInArray.splice(i+1, i+3);
+            transformInArray.splice(i+1, 3);
         }
         else if(transformInArray[i] + transformInArray[i+1] + transformInArray[i+2] + transformInArray[i+3] === "ufat"){
-            transformInArray.splice(i+1, i+3);
+            transformInArray.splice(i+1, 3);
         }
     }
     let encryptedMessage = "";
